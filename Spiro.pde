@@ -4,7 +4,7 @@ class Spiro {
   float rotatexrnd, rotateyrnd;
   float anglernd; 
   float srnd, trnd;
-  int colornd, colorand2;
+  int colornd, colornd2;
   int rotation;
   int x, y;
   boolean followCursor;
@@ -20,9 +20,9 @@ class Spiro {
     srnd = random(-5, 5);
     trnd = random(0.1, 10);
     colornd = (int)random(0, 255);
-    colorand2 = (int)random(0, 255);
+    colornd2 = (int)random(0, 255);
     rotation = 1;
-    stroke(colornd, colorand2, 255);
+    stroke(colornd, colornd2, 255);
     x=width/2;
     y=height/2;
     followCursor = false;
@@ -103,7 +103,7 @@ class Spiro {
     if (record==true) {
       output = createWriter("params_" + day + "." + mnth + "." + year + "." + "_" + hr + mnt + mls + ".txt");
       output.println("*****************************");
-      output.println("color:" + "\t\t" + "("+colornd+","+colorand2+",255"+")");
+      output.println("color:" + "\t\t" + "("+colornd+","+colornd2+",255"+")");
       output.println("rotatexrnd:" + "\t" + rotatexrnd);
       output.println("rotateyrnd:" + "\t" + rotateyrnd);
       output.println("rotation:" + "\t" + rotation);
