@@ -132,4 +132,8 @@ class Spiro {
   void follCur() {
     followCursor=!followCursor;
   }
+  
+  void restart() {
+    frameCount = -1;
+  }
 }
