@@ -26,7 +26,7 @@ void setup() {
 void keyPressed() {
   if (key == 'r' || key == 'R') {
     record = !record;
-    videoExport.setMovieFileName("spir_" + day + "." + mnth + "." + year + "." + "_" + hr + mnt + mls + ".mp4");
+    videoExport.setMovieFileName("spiro_" + day + "." + mnth + "." + year + "." + "_" + hr + mnt + mls + ".mp4");
     videoExport.startMovie();
     if (key == ESC) {
       videoExport.endMovie();  
@@ -43,8 +43,12 @@ void draw() {
   videoExport.saveFrame();
 }
 
-void mouseClicked() {
-  spiro.follCur();
+void mousePressed() {
+  if (mouseButton == LEFT) {
+    spiro.follCur();
+  } else if (mouseButton == RIGHT) {
+    spiro.restart();
+  }
 }
 
 void mouseWheel(MouseEvent event) {
