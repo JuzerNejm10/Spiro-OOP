@@ -3,7 +3,7 @@ animations/processing
 
 my https://github.com/JuzerNejm10/Spiro rewritten in OOP style
 
-i changed some animation parametars so the output is not exactly the same
+changed some animation parametars so the output is not exactly the same
 
 i also added the option to restart (refresh) the sketch by clicking the right mouse button - different animation will be generated
 
