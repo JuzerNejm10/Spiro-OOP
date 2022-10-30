@@ -1,5 +1,4 @@
 class Spiro {
-
   int radius;
   float rotatexrnd, rotateyrnd;
   float anglernd; 
