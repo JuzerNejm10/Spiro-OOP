@@ -29,7 +29,7 @@ class Spiro {
   }
 
   void transRota() {
-    if (followCursor==true) {
+    if (followCursor) {
       x=mouseX;
       y=mouseY;
     }
@@ -99,8 +99,8 @@ class Spiro {
   }
 
   void writeParams() {
-    if (record==true) {
-      output = createWriter("params_" + day + "." + mnth + "." + year + "." + "_" + hr + mnt + mls + ".txt");
+    if (record) {
+      output = createWriter("params_" + datetime + ".txt");
       output.println("*****************************");
       output.println("color:" + "\t\t" + "("+colornd+","+colornd2+",255"+")");
       output.println("rotatexrnd:" + "\t" + rotatexrnd);
