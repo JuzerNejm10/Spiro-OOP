@@ -6,12 +6,7 @@ boolean record=false;
 
 PrintWriter output;
 
-int mls = millis();
-int mnt = minute();
-int hr = hour();
-int day = day();
-int mnth = month();
-int year = year();
+String datetime = str(year())+str(month())+str(day())+str(hour())+str(minute())+str(second());
 
 Spiro spiro;
 
@@ -26,7 +21,7 @@ void setup() {
 void keyPressed() {
   if (key == 'r' || key == 'R') {
     record = !record;
-    videoExport.setMovieFileName("spiro_" + day + "." + mnth + "." + year + "." + "_" + hr + mnt + mls + ".mp4");
+    videoExport.setMovieFileName("spiro_" + "spiro_" + datetime + ".mp4");
     videoExport.startMovie();
     if (key == ESC) {
       videoExport.endMovie();  
